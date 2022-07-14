@@ -12,6 +12,11 @@ function minus (){
     }
 }
 
+function reset (){
+    count = 0;
+    document.getElementById("counter").innerHTML = count;
+}
+
 
 
 

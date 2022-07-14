@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.no-seleccionable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -38,11 +45,11 @@ button {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    border: none;
+    border: 1px solid black;
     border-radius: 50%;
-    box-shadow: 6px 6px 13px 0px rgba(0,0,0,0.7);
+/*     box-shadow: 6px 6px 13px 0px rgba(0,0,0,0.7);
     -webkit-box-shadow: 6px 6px 13px 0px rgba(0,0,0,0.7);
-    -moz-box-shadow: 6px 6px 13px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 6px 6px 13px 0px rgba(0,0,0,0.7); */
 } 
 
 .minus{
@@ -53,4 +60,9 @@ button {
 .plus{
     bottom: 10%;
     right: -15%;
+}
+
+.reset{
+    right: 70%;
+    bottom: -15%;
 }
